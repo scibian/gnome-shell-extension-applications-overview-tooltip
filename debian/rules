@@ -3,8 +3,5 @@
 	dh $@
 
 override_dh_auto_build:
-	for po in locale/*/LC_MESSAGES/*.po; do \
-		msgfmt -cv -o $${po%.po}.mo $$po; \
-	done
 	glib-compile-schemas --strict --targetdir=schemas schemas
 	dh_auto_build
