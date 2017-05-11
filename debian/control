@@ -1,0 +1,13 @@
+Source: gnome-shell-extension-applications-overview-tooltip
+Section: scibian/edf
+Priority: optional
+Maintainer: Scibian Packaging Team <packaging@scibian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/RaphaelRochet/applications-overview-tooltip
+
+Package: gnome-shell-extension-applications-overview-tooltip
+Architecture: all
+Depends: gnome-shell (>= 3.22.0), ${misc:Depends}
+Description: GNOME Shell Applications Overview Tooltip extension
+ Gnome shell extension that shows a tooltip under applications icons on applications overview and search results.

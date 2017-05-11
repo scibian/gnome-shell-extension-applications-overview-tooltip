@@ -1,0 +1,5 @@
+gnome-shell-extension-applications-overview-tooltip (4-0sci9u1~test1) scibian9-test; urgency=medium
+
+  * Initial release.
+
+ -- Scibian Packaging Team <packaging@scibian.org>  Thu, 11 May 2017 11:27:41 +0200
