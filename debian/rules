@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	glib-compile-schemas --strict --targetdir=schemas schemas
+	dh_auto_build

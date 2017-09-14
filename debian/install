@@ -1,0 +1,6 @@
+*.js usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
+*.json usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
+*.css usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
+*.xml usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
+locale usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
+schemas usr/share/gnome-shell/extensions/applications-overview-tooltip@RaphaelRochet
