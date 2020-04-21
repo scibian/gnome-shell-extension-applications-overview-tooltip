@@ -7,7 +7,7 @@ Source: https://github.com/RaphaelRochet/applications-overview-tooltip
 # If you want to use GPL v2 or later for the /debian/* files use 
 # the following clauses, or change it to suit. Delete these two lines
 Files: debian/*
-Copyright: 2016 Scibian Packaging Team <packaging@scibian.org>
+Copyright: 2019 Scibian Packaging Team <packaging@scibian.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
