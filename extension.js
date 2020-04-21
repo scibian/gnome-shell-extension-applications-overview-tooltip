@@ -175,16 +175,10 @@ function _onLeave() {
 		_labelTimeoutId = 0;
 	}
 
-	// but give a chance to skip hover delay if the cursor hovers another icon
 	if (_labelShowing) {
-		_resetHoverTimeoutId = Mainloop.timeout_add(HIDEDELAY,  function() {
-				_hideTooltip();
-				_labelShowing = false;
-				_resetHoverTimeoutId = 0;
-				return false;
-			} );
+		_hideTooltip();
+		_labelShowing = false;
 	}
-
 }
 
 
@@ -250,8 +244,8 @@ function _showTooltip(actor) {
 
 		if (!detailtext) { _ttdetail.hide() } else { _ttdetail.show() };
 
-		[stageX, stageY] = actor.get_transformed_position();
-		[iconWidth, iconHeight] = actor.get_transformed_size();
+		let [stageX, stageY] = actor.get_transformed_position();
+		let [iconWidth, iconHeight] = actor.get_transformed_size();
 		let y = stageY + iconHeight + 5;
 		let x = stageX - Math.round((_ttbox.get_width() - iconWidth)/2);
 
@@ -275,12 +269,6 @@ function _showTooltip(actor) {
 			});
 			_labelShowing = true;
 
-		}
-
-		// do not hide tooltip while cursor is on icon
-		if (_resetHoverTimeoutId > 0) {
-			Mainloop.source_remove(_resetHoverTimeoutId);
-			_resetHoverTimeoutId = 0;
 		}
 
 	} else {
